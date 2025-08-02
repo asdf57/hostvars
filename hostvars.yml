@@ -1,0 +1,34 @@
+flags:
+  enable_k8s: true
+state:
+  state: initializing
+storage:
+  disk_name: /dev/sda
+  partitions:
+  - alloc_type: size
+    flags:
+    - boot
+    - esp
+    fs_type: efi
+    partition_type: primary
+    size: 500
+  - alloc_type: size
+    flags:
+    - swap
+    fs_type: swap
+    partition_type: primary
+    size: 2048
+  - alloc_type: percentage
+    flags:
+    - lvm
+    fs_type: ext4
+    partition_type: primary
+    size: 100
+system:
+  node_type: coord
+  os: arch
+users:
+- groups:
+  - wheel
+  - docker
+  username: user1
