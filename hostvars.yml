@@ -1,5 +1,5 @@
 flags:
-  enable_k8s: true
+  enable_k8s: false
 state:
   state: initializing
 storage:
