@@ -26,7 +26,7 @@ storage:
     size: 100
 system:
   node_type: coord
-  os: debian
+  os: arch
 users:
 - groups:
   - wheel
