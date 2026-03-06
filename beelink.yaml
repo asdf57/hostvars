@@ -1,4 +1,4 @@
-# syncRevision: c36927b097284464
+# syncRevision: fb2c2edbf3665de5
 metadata:
   name: beelink
   labels:
@@ -54,7 +54,7 @@ spec:
   groups: []
   featureFlags:
     provisioned:
-      enabled: false
+      enabled: true
     k8s:
       enabled: true
       role: coord
