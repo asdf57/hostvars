@@ -1,4 +1,4 @@
-# syncRevision: 65ccdbe2ba2e7965
+# syncRevision: 0109adcf93ddd3bd
 metadata:
   name: test-server
   labels:
@@ -53,10 +53,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-03-06T03:01:06.634292Z'
+    lastTransitionTime: '2026-03-06T03:01:12.012619Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-03-06T03:01:06.634393Z'
+    lastTransitionTime: '2026-03-06T03:01:12.012656Z'
   features:
     provisioned:
       installed: false
