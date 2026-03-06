@@ -1,4 +1,4 @@
-# syncRevision: 40431679b09be557
+# syncRevision: ebcf5c6a84e91aaf
 metadata:
   name: beelink
   labels:
@@ -51,6 +51,7 @@ spec:
     groups:
     - wheel
     - docker
+    - test
   groups: []
   featureFlags:
     provisioned:
