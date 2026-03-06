@@ -1,0 +1,93 @@
+# syncRevision: e005b048775594b4
+metadata:
+  name: beelink
+  labels:
+    homelab.io/env: lab
+    homelab.io/type: server
+  annotations: {}
+  finalizers: []
+  creationTimestamp: '2026-03-06T02:49:08.074764Z'
+spec:
+  hostname: beelink
+  ipClaimRef:
+    kind: IPClaim
+    name: ipclaim-beelink
+  os:
+    distro: arch
+    arch: x86_64
+  macAddress: E8:FF:1E:D4:03:FA
+  hardware:
+    cpu: 8
+    ramGiB: 32
+  storage:
+    disk_name: sda
+    partitions:
+    - partition_type: primary
+      alloc_type: size
+      size: 500
+      fs_type: efi
+      flags:
+      - boot
+      - esp
+    - partition_type: primary
+      alloc_type: size
+      size: 2048
+      fs_type: swap
+      flags:
+      - swap
+    - partition_type: primary
+      alloc_type: percentage
+      size: 100
+      fs_type: ext4
+      flags:
+      - lvm
+  networking:
+    interfaces:
+    - name: eth0
+      mac: E8:FF:1E:D4:03:FA
+    vlans: []
+  users:
+  - name: user1
+    groups:
+    - wheel
+    - docker
+  groups: []
+  featureFlags:
+    provisioned:
+      enabled: false
+    k8s:
+      enabled: true
+      role: coord
+    monitoring:
+      enabled: true
+    backup:
+      enabled: false
+    daemon:
+      enabled: true
+  pauseReconciliation: false
+  tags:
+    host: beelink
+status:
+  conditions:
+  - type: Reachable
+    status: 'False'
+    lastTransitionTime: '2026-03-06T02:49:08.075837Z'
+  - type: DaemonReady
+    status: 'False'
+    lastTransitionTime: '2026-03-06T02:49:08.075877Z'
+  features:
+    provisioned:
+      installed: false
+    k8s:
+      installed: false
+    monitoring:
+      installed: false
+    backup:
+      installed: false
+    daemon:
+      installed: false
+  inventorySynced: false
+  hostvarsSynced: false
+  systemStats: {}
+  finalizers: {}
+  allocatedIP: 10.1.1.243
