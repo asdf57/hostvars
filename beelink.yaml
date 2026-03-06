@@ -1,4 +1,4 @@
-# syncRevision: 5178250a96c6f7a7
+# syncRevision: 28dfecaf48356c3f
 metadata:
   name: beelink
   labels:
@@ -70,20 +70,22 @@ spec:
 status:
   conditions:
   - type: InventorySynced
-    status: 'True'
-    reason: Synced
-    message: Inventory synced (54e612791395ff04)
-    lastTransitionTime: '2026-03-06T02:45:02.899209Z'
+    status: 'False'
+    reason: SyncFailed
+    message: 'Command failed (git clone --branch main file:///var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/inventory-remote.git
+      /var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/inventory-local): '
+    lastTransitionTime: '2026-03-06T02:45:20.333920Z'
   - type: HostvarsSynced
-    status: 'True'
-    reason: Synced
-    message: Hostvars synced (54e612791395ff04)
-    lastTransitionTime: '2026-03-06T02:45:02.899219Z'
+    status: 'False'
+    reason: SyncFailed
+    message: 'Command failed (git clone --branch main file:///var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/hostvars-remote.git
+      /var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/hostvars-local): '
+    lastTransitionTime: '2026-03-06T02:45:20.333932Z'
   - type: PipelineReady
-    status: 'True'
-    reason: Synced
-    message: Ready (54e612791395ff04)
-    lastTransitionTime: '2026-03-06T02:45:02.899225Z'
+    status: 'False'
+    reason: SyncFailed
+    message: Waiting for sync
+    lastTransitionTime: '2026-03-06T02:45:20.333937Z'
   - type: Reachable
     status: 'False'
     lastTransitionTime: '2026-03-06T02:43:04.755185Z'
@@ -101,9 +103,8 @@ status:
       installed: false
     daemon:
       installed: false
-  inventorySynced: true
-  hostvarsSynced: true
-  syncRevision: 54e612791395ff04
+  inventorySynced: false
+  hostvarsSynced: false
   systemStats: {}
   finalizers: {}
   allocatedIP: 10.1.1.243
