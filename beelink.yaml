@@ -1,4 +1,4 @@
-# syncRevision: 04205a80ca8330d0
+# syncRevision: 3e1e3ee6ea7281d9
 metadata:
   name: beelink
   labels:
@@ -72,18 +72,18 @@ status:
   - type: InventorySynced
     status: 'True'
     reason: Synced
-    message: Inventory synced (93f3bc408f7d8f76)
-    lastTransitionTime: '2026-03-06T02:55:17.562471Z'
+    message: Inventory synced (04205a80ca8330d0)
+    lastTransitionTime: '2026-03-06T02:55:22.789722Z'
   - type: HostvarsSynced
     status: 'True'
     reason: Synced
-    message: Hostvars synced (93f3bc408f7d8f76)
-    lastTransitionTime: '2026-03-06T02:55:17.562513Z'
+    message: Hostvars synced (04205a80ca8330d0)
+    lastTransitionTime: '2026-03-06T02:55:22.789751Z'
   - type: PipelineReady
     status: 'True'
     reason: Synced
-    message: Ready (93f3bc408f7d8f76)
-    lastTransitionTime: '2026-03-06T02:55:17.562529Z'
+    message: Ready (04205a80ca8330d0)
+    lastTransitionTime: '2026-03-06T02:55:22.789770Z'
   - type: Reachable
     status: 'False'
     lastTransitionTime: '2026-03-06T02:50:34.871495Z'
@@ -103,7 +103,7 @@ status:
       installed: false
   inventorySynced: true
   hostvarsSynced: true
-  syncRevision: 93f3bc408f7d8f76
+  syncRevision: 04205a80ca8330d0
   systemStats: {}
   finalizers: {}
   allocatedIP: 10.1.1.243
