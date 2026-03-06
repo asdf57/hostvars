@@ -1,0 +1,91 @@
+# syncRevision: 30565a3ae746543a
+metadata:
+  name: deploy-test-1772763954
+  labels: {}
+  annotations: {}
+  finalizers: []
+  creationTimestamp: '2026-03-06T02:25:54.447243Z'
+spec:
+  hostname: deploy-test-1772763954.homelab.local
+  os:
+    distro: ubuntu-24.04-live
+    arch: x86_64
+  macAddress: 02:00:00:00:00:99
+  hardware:
+    cpu: 2
+    ramGiB: 4
+  storage:
+    disk_name: sda
+    partitions:
+    - partition_type: primary
+      alloc_type: percentage
+      size: 100
+      fs_type: ext4
+      flags:
+      - lvm
+  networking:
+    interfaces:
+    - name: eth0
+      dhcp: true
+    vlans: []
+  users:
+  - name: admin
+    groups:
+    - wheel
+  groups:
+  - test_nodes
+  featureFlags:
+    provisioned:
+      enabled: false
+    k8s:
+      enabled: false
+      role: worker
+    monitoring:
+      enabled: true
+    backup:
+      enabled: false
+    daemon:
+      enabled: true
+  pauseReconciliation: false
+  tags:
+    env: deploy-test
+status:
+  conditions:
+  - type: InventorySynced
+    status: 'False'
+    reason: SyncFailed
+    message: 'Command failed (git clone --branch main file:///var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/inventory-remote.git
+      /var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/inventory-local): '
+    lastTransitionTime: '2026-03-06T02:28:16.677093Z'
+  - type: HostvarsSynced
+    status: 'False'
+    reason: SyncFailed
+    message: 'Command failed (git clone --branch main file:///var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/hostvars-remote.git
+      /var/folders/cj/yr4jplmd6bzcr6qdjyjm944c0000gn/T/tmp.noZkeXvUXH/hostvars-local): '
+    lastTransitionTime: '2026-03-06T02:28:16.677131Z'
+  - type: PipelineReady
+    status: 'False'
+    reason: SyncFailed
+    message: Waiting for sync
+    lastTransitionTime: '2026-03-06T02:28:16.677138Z'
+  - type: Reachable
+    status: 'False'
+    lastTransitionTime: '2026-03-06T02:26:04.376100Z'
+  - type: DaemonReady
+    status: 'False'
+    lastTransitionTime: '2026-03-06T02:26:04.376180Z'
+  features:
+    provisioned:
+      installed: false
+    k8s:
+      installed: false
+    monitoring:
+      installed: false
+    backup:
+      installed: false
+    daemon:
+      installed: false
+  inventorySynced: false
+  hostvarsSynced: false
+  systemStats: {}
+  finalizers: {}
