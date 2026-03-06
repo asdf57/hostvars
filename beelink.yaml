@@ -1,4 +1,4 @@
-# syncRevision: 836ffaac76cdce02
+# syncRevision: 40431679b09be557
 metadata:
   name: beelink
   labels:
@@ -8,7 +8,7 @@ metadata:
   finalizers: []
   creationTimestamp: '2026-03-06T02:50:06.021633Z'
 spec:
-  hostname: beelink-2
+  hostname: beelink
   ipClaimRef:
     kind: IPClaim
     name: ipclaim-beelink
