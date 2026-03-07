@@ -1,4 +1,4 @@
-# syncRevision: 64cac9fb4ae066fc
+# syncRevision: c089fbc168cdbfc0
 metadata:
   name: beelink
   labels:
@@ -13,7 +13,7 @@ spec:
     kind: IPClaim
     name: ipclaim-beelink
   os:
-    distro: arch
+    distro: debian
     arch: x86_64
   macAddress: E8:FF:1E:D4:03:FA
   hardware:
