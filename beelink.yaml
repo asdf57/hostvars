@@ -34,7 +34,7 @@ spec:
       mac: E8:FF:1E:D4:03:FA
     vlans: []
   users:
-  - name: user1
+  - name: user
     groups:
     - wheel
     - docker
