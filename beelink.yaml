@@ -1,4 +1,4 @@
-# syncRevision: bd3f8c462d0c7986
+# syncRevision: 3faeb7c39ffff7a1
 metadata:
   name: beelink
   labels:
@@ -59,10 +59,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-03-07T01:55:43.552504Z'
+    lastTransitionTime: '2026-03-07T01:55:48.041749Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-03-07T01:55:43.552558Z'
+    lastTransitionTime: '2026-03-07T01:55:48.041855Z'
   features:
     provisioned:
       installed: false
