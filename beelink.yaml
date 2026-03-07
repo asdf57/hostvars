@@ -1,4 +1,4 @@
-# syncRevision: 72c5bd63f1205a8f
+# syncRevision: 0fe324bcfa3b99b6
 metadata:
   name: beelink
   labels:
@@ -8,7 +8,7 @@ metadata:
   finalizers: []
   creationTimestamp: '2026-03-06T02:50:06.021633Z'
 spec:
-  hostname: beelink-test
+  hostname: beelink
   ipClaimRef:
     kind: IPClaim
     name: ipclaim-beelink
@@ -59,10 +59,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-03-07T01:29:43.524161Z'
+    lastTransitionTime: '2026-03-07T01:30:19.208198Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-03-07T01:29:43.524252Z'
+    lastTransitionTime: '2026-03-07T01:30:19.208251Z'
   features:
     provisioned:
       installed: false
