@@ -1,4 +1,4 @@
-# syncRevision: 16abf16ae233eb73
+# syncRevision: 1f4e901e6ed46528
 metadata:
   name: beelink
   labels:
@@ -13,7 +13,7 @@ spec:
     kind: IPClaim
     name: ipclaim-beelink
   os:
-    distro: arch
+    distro: debian
     arch: x86_64
   macAddress: E8:FF:1E:D4:03:FA
   hardware:
@@ -29,18 +29,6 @@ spec:
       flags:
       - boot
       - esp
-    - partition_type: primary
-      alloc_type: size
-      size: 2048
-      fs_type: swap
-      flags:
-      - swap
-    - partition_type: primary
-      alloc_type: percentage
-      size: 100
-      fs_type: ext4
-      flags:
-      - lvm
   networking:
     interfaces:
     - name: eth0
@@ -71,10 +59,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-03-06T02:50:34.871495Z'
+    lastTransitionTime: '2026-03-07T00:25:53.576279Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-03-06T02:50:34.871702Z'
+    lastTransitionTime: '2026-03-07T00:25:53.576331Z'
   features:
     provisioned:
       installed: false
