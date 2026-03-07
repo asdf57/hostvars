@@ -28,6 +28,18 @@ spec:
       flags:
       - boot
       - esp
+    - partition_type: primary
+      alloc_type: size
+      size: 2048
+      fs_type: swap
+      flags:
+      - swap
+    - partition_type: primary
+      alloc_type: percentage
+      size: 100
+      fs_type: ext4
+      flags:
+      - lvm
   networking:
     interfaces:
     - name: eth0
