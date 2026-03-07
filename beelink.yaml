@@ -5,7 +5,7 @@ metadata:
     homelab.io/type: server
   annotations: {}
   finalizers: []
-  creationTimestamp: '2026-03-07T16:02:34.852592Z'
+  creationTimestamp: '2026-03-07T02:17:28.440190Z'
 spec:
   hostname: beelink
   ipClaimRef:
@@ -70,16 +70,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-03-07T16:02:34.853416Z'
+    lastTransitionTime: '2026-03-07T02:17:32.752159Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-03-07T16:02:34.853447Z'
-  - type: IPAllocated
-    status: 'False'
-    reason: IPClaimNotBound
-    message: 'Failed to reserve IP: MikroTik reserve failed: 400 {"detail":"failure:
-      already have static lease for this client","error":400,"message":"Bad Request"}'
-    lastTransitionTime: '2026-03-07T17:53:38.866698Z'
+    lastTransitionTime: '2026-03-07T02:17:32.752217Z'
   features:
     provisioned:
       installed: false
