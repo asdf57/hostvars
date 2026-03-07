@@ -74,6 +74,10 @@ status:
   - type: DaemonReady
     status: 'False'
     lastTransitionTime: '2026-03-07T16:02:34.853447Z'
+  - type: IPAllocated
+    status: 'False'
+    reason: IPClaimNotBound
+    lastTransitionTime: '2026-03-07T16:30:01.693279Z'
   features:
     provisioned:
       installed: false
