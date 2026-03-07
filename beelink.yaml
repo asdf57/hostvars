@@ -77,9 +77,9 @@ status:
   - type: IPAllocated
     status: 'False'
     reason: IPClaimNotBound
-    message: 'Failed to delete reservation: MikroTik delete failed: 400 {"detail":"missing
-      or invalid resource identifier","error":400,"message":"Bad Request"}'
-    lastTransitionTime: '2026-03-07T17:53:37.982443Z'
+    message: 'Failed to reserve IP: MikroTik reserve failed: 400 {"detail":"failure:
+      already have static lease for this client","error":400,"message":"Bad Request"}'
+    lastTransitionTime: '2026-03-07T17:53:38.866698Z'
   features:
     provisioned:
       installed: false
