@@ -5,7 +5,7 @@ metadata:
     homelab.io/type: server
   annotations: {}
   finalizers: []
-  creationTimestamp: '2026-04-02T01:34:03.403794Z'
+  creationTimestamp: '2026-04-02T01:44:47.238147Z'
 spec:
   hostname: beelink.homelab.local
   ipClaimRef:
@@ -67,10 +67,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-04-02T01:34:09.435247Z'
+    lastTransitionTime: '2026-04-02T01:44:47.238939Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-04-02T01:34:09.435289Z'
+    lastTransitionTime: '2026-04-02T01:44:47.238972Z'
   features:
     provisioned:
       installed: false
