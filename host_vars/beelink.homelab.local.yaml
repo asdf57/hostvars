@@ -67,10 +67,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-04-02T01:45:56.328012Z'
+    lastTransitionTime: '2026-04-02T01:46:00.975524Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-04-02T01:45:56.328032Z'
+    lastTransitionTime: '2026-04-02T01:46:00.975551Z'
   features:
     provisioned:
       installed: false
