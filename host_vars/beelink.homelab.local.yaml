@@ -64,13 +64,7 @@ spec:
   tags:
     host: beelink
 status:
-  conditions:
-  - type: Reachable
-    status: 'False'
-    lastTransitionTime: '2026-04-02T01:34:03.404848Z'
-  - type: DaemonReady
-    status: 'False'
-    lastTransitionTime: '2026-04-02T01:34:03.404871Z'
+  conditions: []
   features:
     provisioned:
       installed: false
