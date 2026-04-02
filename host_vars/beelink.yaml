@@ -67,10 +67,10 @@ status:
   conditions:
   - type: Reachable
     status: 'False'
-    lastTransitionTime: '2026-04-02T01:48:47.254663Z'
+    lastTransitionTime: '2026-04-02T01:48:52.040088Z'
   - type: DaemonReady
     status: 'False'
-    lastTransitionTime: '2026-04-02T01:48:47.254698Z'
+    lastTransitionTime: '2026-04-02T01:48:52.040464Z'
   features:
     provisioned:
       installed: false
@@ -84,3 +84,4 @@ status:
       installed: false
   systemStats: {}
   finalizers: {}
+  allocatedIP: 10.1.1.243
