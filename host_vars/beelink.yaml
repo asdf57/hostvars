@@ -64,11 +64,16 @@ spec:
   tags:
     host: beelink
 status:
+  allocatedIP: 10.1.1.243
   conditions:
   - type: Reachable
     status: 'False'
   - type: DaemonReady
     status: 'False'
+  - type: IPAllocated
+    status: 'True'
+    reason: IPClaimBound
+    message: IPClaim ipclaim-beelink bound to 10.1.1.243
   features:
     provisioned:
       installed: false
@@ -82,4 +87,3 @@ status:
       installed: false
   systemStats: {}
   finalizers: {}
-  allocatedIP: 10.1.1.243
