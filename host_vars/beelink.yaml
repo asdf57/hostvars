@@ -82,3 +82,4 @@ status:
       installed: false
   systemStats: {}
   finalizers: {}
+  allocatedIP: 10.1.1.243
