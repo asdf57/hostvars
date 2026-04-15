@@ -50,7 +50,7 @@ spec:
   groups: []
   featureFlags:
     provisioned:
-      enabled: false
+      enabled: true
     k8s:
       enabled: true
       role: coord
