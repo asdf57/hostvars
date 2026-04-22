@@ -4,13 +4,15 @@ metadata:
     homelab.io/env: lab
     homelab.io/type: server
   annotations: {}
-  finalizers: []
+  finalizers:
+  - homelab.io/ip-release
+  - homelab.io/deprovision
   creationTimestamp: '2026-04-10T01:55:04.757795Z'
 spec:
   hostname: beelink.homelab.local
   ipClaimRef:
     kind: IPClaim
-    name: ipclaim-beelink
+    name: ipclaim-01
   os:
     distro: ubuntu-24.04-live
     arch: x86_64
@@ -43,7 +45,7 @@ spec:
       dhcp: true
     vlans: []
   users:
-  - name: user1
+  - name: admin
     groups:
     - wheel
     - docker
@@ -63,6 +65,7 @@ spec:
   pauseReconciliation: false
   tags:
     host: beelink
+    homelab.io/env: lab
 status:
   allocatedIP: 10.1.1.243
   conditions:
